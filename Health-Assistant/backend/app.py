@@ -7,7 +7,11 @@ app = Flask(__name__)
 
 app.register_blueprint(assistant_bp)
 app.register_blueprint(bmi_bp)
-CORS(app, origins=["https://health-assistant-vercel.vercel.app/"])
+CORS(app, resources={
+  r"/api/*":{
+    "origins":["https://health-assistant-vercel.vercel.app/"]
+  }
+})
 
 if __name__ == "__main__":
   app.run(debug=True)
