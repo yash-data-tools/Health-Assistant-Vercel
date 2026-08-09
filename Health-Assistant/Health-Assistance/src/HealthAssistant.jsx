@@ -9,7 +9,7 @@ export function HealthAssistant() {
   const [symptoms, setSymptoms] = useState('');
   const [result, setResult] = useState(null)
   async function sendRequest() {
-    const response = await axios.post('https://health-assistant-i63f.onrender.com/api/responses', {
+    const response = await axios.post('https://health-assistant-vercel.onrender.com/api/responses', {
       symptoms
     })
 
