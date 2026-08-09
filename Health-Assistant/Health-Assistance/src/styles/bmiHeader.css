@@ -1,0 +1,56 @@
+.Bmiheader {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 250px;
+  right: 0;
+  background-color: white;
+  height: 100px;
+  align-items: center;
+  z-index: 10;
+  border-bottom:1px solid rgb(231, 231, 231) ;
+}
+
+.bmi-image {
+  width: 180px;
+  object-fit:cover; 
+  margin-right: 300px;
+  height: 100%;
+}
+
+.bmi-notice {
+  flex: 1;
+  margin-left: 20px;
+  color: gray;
+}
+
+
+
+.bmi-title {
+  margin-bottom: 12px;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
+
+@media (max-width:1009px) {
+  .bmi-image{
+    margin-right: auto;
+  }
+
+}
+
+@media (max-width:790px) {
+  .Bmiheader{
+    top: 0;
+  left: 65px;
+  right: 0;
+  z-index: 100;
+  }
+}
+
+@media (max-width:400px){
+  #details {
+    display: none;
+  }
+}
