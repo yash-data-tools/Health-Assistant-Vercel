@@ -13,7 +13,7 @@ export function BmiCalculator() {
   const [bmi, setBmi] = useState(null);
 
   async function getBMI() {
-    const response = await axios.post("https://health-assistant-i63f.onrender.com/api/bmi", {
+    const response = await axios.post("https://health-assistant-vercel.onrender.com/api/bmi", {
       height, 
       weight,
       age
