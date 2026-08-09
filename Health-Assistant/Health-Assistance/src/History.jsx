@@ -7,7 +7,7 @@ export function Histroy() {
   const [history, setHistory] = useState([]);
 
   const loadHistory = async () => {
-    const response = await axios.get('https://health-assistant-i63f.onrender.com/api/results')
+    const response = await axios.get('https://health-assistant-vercel.onrender.com/api/results')
     setHistory(response.data);
   }
 
