@@ -9,7 +9,7 @@ app.register_blueprint(assistant_bp)
 app.register_blueprint(bmi_bp)
 CORS(app, resources={
   r"/api/*":{
-    "origins":["https://health-assistant-vercel.vercel.app/"]
+    "origins":["https://health-assistant-vercel.vercel.app"]
   }
 })
 
