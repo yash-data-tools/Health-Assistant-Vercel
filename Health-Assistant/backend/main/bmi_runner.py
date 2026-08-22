@@ -7,7 +7,7 @@ bmi_bp = Blueprint("bmi",__name__)
 def runBMI(height, weight):
   print(os.path.dirname(__file__))
 
-  exe_path = os.path.abspath(os.path.join(os.path.dirname(__file__),"..","c_module","bmi_calculator"))
+  exe_path = os.path.abspath(os.path.join(os.path.dirname(__file__),"..","c_module","bmi_calculator.c"))
   print(exe_path)
   result = subprocess.run(
     [exe_path,str(height),str(weight)],
