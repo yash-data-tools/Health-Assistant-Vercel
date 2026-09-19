@@ -9,6 +9,7 @@ export function App() {
       <Route path="/" element={<HealthAssistant />} />
       <Route path="/bmi" element={<BmiCalculator />} />
       <Route path="/history" element={<Histroy />} />
+      <Route path="/about" element={<About />} />
     </Routes>
   );
 }
