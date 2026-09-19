@@ -23,7 +23,8 @@ export function Sidebar() {
     },
     {
       image: "images/info.png",
-      title: "/about"
+      title: "About",
+      path:"/about"
     },
     {
       image: "images/shield.png",
