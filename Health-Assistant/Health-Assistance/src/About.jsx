@@ -135,18 +135,18 @@ export function About() {
             </div>
           </div>
 
-          <button
+          {/* <button
             className="about-theme-toggle"
             onClick={toggleTheme}
             title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
             aria-label="Toggle theme"
           >
-            /* {theme === 'dark' ? (
+            {theme === 'dark' ? (
               <img src="images/light_mode.png" alt="Light mode" className="theme-toggle-img" />
             ) : (
               <img src="images/dark-mode.png" alt="Dark mode" className="theme-toggle-img" />
-            )} */
-          </button>
+            )} 
+          </button> */}
         </header>
 
         <main className="about-content">
