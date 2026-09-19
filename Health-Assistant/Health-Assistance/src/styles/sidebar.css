@@ -77,10 +77,10 @@
 
 @media (max-width: 752px) {
   .section{
-    margin-top: 17px;;
+    margin-top: 17px;
   }
   .sidebar{
-    left: -184px;;
+    left: -184px;
     align-items: end;
   }
   .title {

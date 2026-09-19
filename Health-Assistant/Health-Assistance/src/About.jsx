@@ -1,11 +1,16 @@
 import { useState } from "react";
 import { Sidebar } from "./component/Sidebar";
-import { useTheme } from "./context/ThemeContext";
 import "./styles/about.css";
 
 export function About() {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
-  const { theme, toggleTheme } = useTheme();
+  const [theme, setTheme] = useState("light");
+
+  const toggleTheme = () => {
+    const nextTheme = theme === "light" ? "dark" : "light";
+    setTheme(nextTheme);
+    document.documentElement.setAttribute("data-theme", nextTheme);
+  };
 
   const leaders = [
     {
@@ -182,7 +187,7 @@ export function About() {
 
               <div className="about-hero-image-wrapper">
                 <img
-                  src="images/about_hero.jpg"
+                  src="images/main_doctor.jpeg"
                   alt="Medical Research and Team Collaboration"
                   className="about-hero-img"
                 />

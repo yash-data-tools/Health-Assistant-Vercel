@@ -50,7 +50,7 @@ export function Histroy() {
               </summary>
               <div className="entry-panel">
                 <div className="card-grid">
-                  <div className=".info-card-final">
+                  <div className="info-card">
                     <div className="card-icon causes">
                       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1FA24A" strokeWidth="2">
                         <circle cx="12" cy="12" r="4" />
@@ -69,7 +69,7 @@ export function Histroy() {
                       })}
                     </ul>
                   </div>
-                  <div className=".info-card-final">
+                  <div className="info-card">
                     <div className="card-icon severity">
                       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E8952E" strokeWidth="2">
                         <path d="M12 2 3 6v6c0 5 3.8 8.7 9 10 5.2-1.3 9-5 9-10V6l-9-4Z" />
@@ -79,7 +79,7 @@ export function Histroy() {
                     <span className={`severity-tag ${item.data.severity.toLowerCase()}`}>{item.data.severity}</span>
                     <p className="severity-note">Your symptoms indicate a {item.data.severity} severity. Monitor your condition closely.</p>
                   </div>
-                  <div className=".info-card-final">
+                  <div className="info-card">
                     <div className="card-icon advice">
                       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5B6FE0" strokeWidth="2">
                         <rect x="3" y="4" width="18" height="18" rx="2" />
@@ -97,7 +97,7 @@ export function Histroy() {
                       })}
                     </ul>
                   </div>
-                  <div className=".info-card-final">
+                  <div className="info-card">
                     <div className="card-icon doctor">
                       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D763A6" strokeWidth="2">
                         <circle cx="12" cy="8" r="4" />

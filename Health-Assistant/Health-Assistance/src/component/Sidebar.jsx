@@ -33,7 +33,9 @@ export function Sidebar() {
   ]
 
   const changeActivePage = (index, path) =>{
-    navigate(path);
+    if (path) {
+      navigate(path);
+    }
   }
 
   return (
@@ -61,7 +63,7 @@ export function Sidebar() {
           <span>This assistant does not replace doctor.   </span>
         </div>
         <div className="final-info">
-          If your symptoms are severe or worsening, seek immediate mdical attention.
+          If your symptoms are severe or worsening, seek immediate medical attention.
         </div>
       </div>
     </div>
