@@ -36,7 +36,7 @@ export function BmiCalculator() {
       <div className="Bmiheader">
         <div className="bmi-notice">
           <div className="bmi-title">BMI Calculator</div>
-          <div id="details">Calulate your Body Mass Index and know your Health Status.</div>
+          <div id="details">Calculate your Body Mass Index and know your health status.</div>
         </div>
         <img src="images/bmi_calc.jpeg" className="bmi-image" alt="" />
       </div>

@@ -112,7 +112,7 @@ export function HealthAssistant() {
       <div className="bottom-disclaimer">
         <img src="images/health_safety.png" alt="" className="disclaimer-image" />
         <span>Disclaimer</span>
-        <span className="disclaimer"> This AI assistant provide informational guidance only And is not substitute for professional medical advice, Diagnosis or treatment If symptoms are severe or worsening, consult a qualified healthcare professional or seek emergency care </span>
+        <span className="disclaimer"> This AI assistant provides informational guidance only and is not a substitute for professional medical advice, diagnosis, or treatment. If symptoms are severe or worsening, consult a qualified healthcare professional or seek emergency care. </span>
       </div>
     </>
   );

@@ -1,8 +1,7 @@
-import { useNavigate, useLocation } from "react-router";
+import { Link, useLocation } from "react-router";
 import "../styles/sidebar.css"
 
 export function Sidebar() {
-  const navigate = useNavigate();
   const location = useLocation();
 
   const sidebaritems = [
@@ -32,12 +31,6 @@ export function Sidebar() {
     }
   ]
 
-  const changeActivePage = (index, path) =>{
-    if (path) {
-      navigate(path);
-    }
-  }
-
   return (
     <div className="sidebar">
       <div className="sidebar-logo">
@@ -48,19 +41,34 @@ export function Sidebar() {
 
         {
           sidebaritems.map((item, index) => {
+            const className = location.pathname === item.path ? "section active" : "section";
+            const content = (
+              <>
+                <img src={item.image} alt="" className="section-image" />
+                <span>{item.title}</span>
+              </>
+            );
+
+            if (item.path) {
+              return (
+                <Link key={index} to={item.path} className={className}>
+                  {content}
+                </Link>
+              );
+            }
+
             return (
-                <div key={index} className={location.pathname === item.path? "section active":"section"} onClick={()=>{changeActivePage(index,item.path)}}>
-                  <img src={item.image} alt="" className="section-image" />
-                  <span>{item.title}</span>
-                </div>
-            )
+              <div key={index} className={className}>
+                {content}
+              </div>
+            );
           })
         }
       </div>
       <div className="information">
         <div className="info">
           <img src="images/side-heart.png" alt="" className="health" />
-          <span>This assistant does not replace doctor.   </span>
+          <span>This assistant does not replace a doctor.</span>
         </div>
         <div className="final-info">
           If your symptoms are severe or worsening, seek immediate medical attention.

@@ -178,8 +178,9 @@ export function About() {
               <div className="about-hero-image-wrapper">
                 <img
                   src="images/main_doctor.jpeg"
-                  alt="Medical Research and Team Collaboration"
+                  alt="Recommended doctor illustration"
                   className="about-hero-img"
+                  loading="lazy"
                 />
               </div>
             </div>
