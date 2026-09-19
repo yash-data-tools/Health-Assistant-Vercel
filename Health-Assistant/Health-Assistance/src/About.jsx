@@ -3,7 +3,6 @@ import { Sidebar } from "./component/Sidebar";
 import "./styles/about.css";
 
 export function About() {
-  const [isMobileOpen, setIsMobileOpen] = useState(false);
   const [theme, setTheme] = useState("light");
 
   const toggleTheme = () => {
@@ -124,21 +123,12 @@ export function About() {
 
   return (
     <>
-      <Sidebar isMobileOpen={isMobileOpen} setIsMobileOpen={setIsMobileOpen} />
+      <Sidebar />
 
       <div className="about-container main-page">
         {/* Header Bar */}
         <header className="about-header">
           <div className="about-header-left">
-            <button
-              className="mobile-menu-btn"
-              onClick={() => setIsMobileOpen(true)}
-              aria-label="Open navigation menu"
-            >
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
             <div>
               <h1>About Health Assistant AI</h1>
               <p className="about-subtitle">The mission, engineering, and student team behind the application</p>
@@ -146,7 +136,7 @@ export function About() {
           </div>
 
           <button
-            className="light-dark-mode about-theme-toggle"
+            className="about-theme-toggle"
             onClick={toggleTheme}
             title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
             aria-label="Toggle theme"
